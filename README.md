@@ -93,7 +93,7 @@ To provide a **deceptive and data-rich honeypot system** that helps security res
 </p>
 <br>
 
-https://github.com/user-attachments/assets/9d69471d-fd62-461b-9312-6a5223392fe4
+https://github.com/user-attachments/assets/6c08f287-4ade-4eb8-bcee-777adc5163ba
 
 <!-- TechStack -->
 ### Tech Stack
