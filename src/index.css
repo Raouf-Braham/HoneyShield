@@ -1,0 +1,148 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 213 31% 91%;
+
+    --card: 222 47% 13%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 214 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 220 34% 23%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 222 47% 9%;
+    --sidebar-foreground: 213 31% 91%;
+    --sidebar-primary: 214 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 14%;
+    --sidebar-accent-foreground: 213 31% 91%;
+    --sidebar-border: 222 47% 14%;
+    --sidebar-ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary/30;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+
+  .terminal-text {
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Menlo', 'Monaco', 'Courier New', monospace;
+  }
+  
+  .honeypot-pulse-low {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    animation: honeypot-pulse-low 2s infinite;
+  }
+  
+  @keyframes honeypot-pulse-low {
+    0% {
+      box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+  }
+  
+  .honeypot-pulse-normal {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+    animation: honeypot-pulse-normal 2s infinite;
+  }
+  
+  @keyframes honeypot-pulse-normal {
+    0% {
+      box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+    }
+  }
+  
+  .honeypot-pulse-high {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    animation: honeypot-pulse-high 2s infinite;
+  }
+  
+  @keyframes honeypot-pulse-high {
+    0% {
+      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
+  }
+  
+  .honeypot-pulse-critical {
+    box-shadow: 0 0 0 0 rgba(127, 29, 29, 0.7);
+    animation: honeypot-pulse-critical 2s infinite;
+  }
+  
+  @keyframes honeypot-pulse-critical {
+    0% {
+      box-shadow: 0 0 0 0 rgba(127, 29, 29, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(127, 29, 29, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(127, 29, 29, 0);
+    }
+  }
+}
