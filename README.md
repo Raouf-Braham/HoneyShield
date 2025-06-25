@@ -220,6 +220,11 @@ These endpoints do not show UI content, but silently log access attempts.
 <!-- Contributing -->
 ## Contributing
 
+<a href="https://github.com/Raouf-Braham/HoneyShield/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Raouf-Braham/HoneyShield" />
+</a>
+
+
 Contributions are always welcome!
 
 See `contributing.md` for ways to get started.
