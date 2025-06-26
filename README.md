@@ -246,7 +246,7 @@ Distributed under the no License. See LICENSE.txt for more information.
 
 Linkedin - [@Raouf Braham](https://www.linkedin.com/in/raouf-braham-67b365251/) | Email - raouf.brahem@eniso.u-sousse.tn
 
-Project Link: [https://github.com/Raouf-Braham/StylishYou](https://github.com/Raouf-Braham/WebScanPro)
+Project Link: [https://github.com/Raouf-Braham/HoneyShield](https://github.com/Raouf-Braham/HoneyShield)
 
 
 <!-- Acknowledgments -->
